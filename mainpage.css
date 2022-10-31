@@ -1,0 +1,240 @@
+*{
+    background-color: #FDFDFD;
+    margin: 0;
+    padding: 0;
+    outline: none!important;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+} 
+
+
+
+section{    /* controls the DNA of the page, keeps it like apple site. the content remains in center */
+    height: 100vh; /* this makes the use of whole space avaialble on the screen */
+    display: flex;
+    justify-content: center; /* this brings the content to the centre, but remains at the top */
+    align-items: center; /* this brought the content at the centre of the screen */
+    scroll-snap-align: start; /*this makes it look like aple*/
+  }
+  
+  .container{
+      scroll-snap-type: y mandatory; /* proximity can as well be used */
+      overflow-y: scroll;
+      height: 100vh; /* only after adding this the page scrolled perfectly and stucked at the desired alighnment */ 
+  }
+
+
+.logo{
+    width: 150px;
+}
+
+  nav {
+    margin: auto;
+    display: flex;
+    padding: 35px 20;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+
+
+.navigation-links{
+    flex: 1;
+    text-align: right;
+}
+
+.navigation-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 9px 12px;
+    position: relative;
+
+} 
+
+
+.navigation-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.navigation-links ul li a{
+    color: #0FFF50;
+    text-decoration: dashed;  /* none*/
+    font-size: 18px;
+
+}
+
+.navigation-links ul li ::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    background: palevioletred;
+    display: block;
+    margin: auto;
+    transition: 0.8s;
+
+}
+
+.navigation-links ul li :hover::after{
+    width: 100%;
+
+}
+
+
+
+nav .fa{                                   /* to hide the symbol from the main page */
+    display: none;
+}
+@media(max-width: 500px){
+    .text-box h1{
+        font-size: 10px;
+    }
+    .navigation-links ul li {
+        display: block;
+    }
+    .navigation-links{          /* menue */
+        position: absolute;
+        background: #5F8575;
+        height: 100vh;
+        width: 170px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+
+    }
+    nav .fa{
+        display: block;
+        color: grey;
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .navigation-links ul{
+        padding: 30px;
+    }
+}
+
+
+  element.style {
+    width: 100%;
+    height: 100%;
+}
+
+
+.card {
+    margin-bottom: 10px;
+    overflow: hidden;
+}  
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background-color: black;
+    background-clip: border-box;
+    border: 1px solid #198754;
+    border-radius: .25rem;
+    
+}
+
+
+.curved-super-card {
+    border-radius: 56px;
+    overflow: hidden;
+    height: 500px;
+    width: 800px;
+}
+
+
+
+
+video.player {
+    background-color: black;
+}
+
+video {
+    object-fit: contain; /*  this isnt helping to fix the video width wise   */
+}
+
+.d-md-block {
+    display: block!important;
+}
+
+
+.align-content-center {
+    align-content: center!important;
+}
+
+.d-flex {
+    display: flex!important;
+}
+  
+
+
+
+
+
+
+
+
+  
+  .image-gallery{
+      width: 80%;
+      margin: 100px auto 50px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 30px;
+  
+  }
+  
+  
+  .image-gallery img{
+      width: 100%;
+      height: 90%;
+      object-fit:cover;
+      cursor: pointer;
+      border: 5px solid #198754;
+    border-radius: .25rem;
+  }
+  
+  
+  .image-gallery img:hover{
+      transform: scale(0.8) rotate(-15deg);
+      box-shadow: 0 32px 80px rgba(68, 77, 136, 0.2);
+  }
+
+
+
+.price h1{
+    width: 100%;
+    color: #228B22;
+    position: relative;
+    top: 80%; /*  this changes the position relative to top  */
+    left: 50%;
+    transform: translate(-50%,-50%); /* this will bring the Text in the centre of the page */
+    text-align: center;
+
+}
+
+
+.about{
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    display: flex;
+}
+

@@ -1,0 +1,17 @@
+label, input {
+	display: block;
+	margin: 10px 0;
+	width: 100%;
+}
+form {
+	border:  1px solid black;
+	width: 300px;
+	margin: auto;
+	padding:  16px;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}

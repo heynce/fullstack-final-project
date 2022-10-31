@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(2,5,10,0.2),rgba(2,5,10,0.2)),/* decimal portion changes the brightness of wallpaper */
+    url("/Users/heyncesaraf/Desktop/dublin coding/web development project/FINAL PROJECT/photo/background1.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+.contactPg{
+    font-size: 50px;
+    text-align: center;
+    color: aquamarine;
+    text-align: relative;    
+    
+}
+
+.contact-container{
+    display: flex;
+    justify-content: center; /* to bring the boxes in centre */
+    flex-wrap: wrap;
+    align-items: center;
+    
+    
+}
+
+.contactCRD{
+    background: white;
+    width: 420px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 20px 20px;
+    right: 70%;
+    left: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.Anglishkai{
+    height: 250px;
+    margin-bottom: 50px;
+    background-size: cover;
+    background-image: url("/Users/heyncesaraf/Desktop/dublin coding/web development project/FINAL PROJECT/photo/anglishkai.jpg");
+    border-radius: 20px 20px;
+    
+
+
+}
+
+.Lietuvishkai{
+    height: 250px;
+    margin-bottom: 50px;
+    background-size: cover;
+    background-image: url("/Users/heyncesaraf/Desktop/dublin coding/web development project/FINAL PROJECT/photo/lithuania.png");
+    border-radius: 20px 20px;
+}
+
+.contactCRD:hover{
+    background-color: blanchedalmond;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav img{
+    width: 250px;
+}
+
+.navigation-links{
+    flex: 1;
+    text-align: right;
+}
+
+.navigation-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 9px 12px;
+    position: relative;
+
+} 
+
+
+.navigation-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.navigation-links ul li a{
+    color: #0FFF50;
+    text-decoration: dashed;  /* none*/
+    font-size: 18px;
+
+}
+
+.navigation-links ul li ::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.8s;
+
+}
+
+.navigation-links ul li :hover::after{
+    width: 100%;
+
+}
